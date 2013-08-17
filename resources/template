@@ -1,0 +1,1 @@
+arp -a | grep '11:22:33:44:55:66' | awk '{print $2}' | sed 's/(/https:\/\//g' | sed 's/)/:9702/g'
